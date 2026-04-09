@@ -1,0 +1,383 @@
+.main_Content {
+    background-color: #f9fcfa;
+    .score_Section {
+        display: flex;
+        align-items: center;
+        width: 100%;
+        padding: 30px 0px;
+        border-bottom: 1px solid #ccc;
+        .ai_Image {
+            padding-right: 15px;
+            img {
+                height: 68px;
+                width: 70px;
+                padding: 15px;
+                background: #dcfae6;
+                border-radius: 5px;
+            }
+        }
+
+        .score_Content {
+            .score_Content_Heading {
+                display: flex;
+                align-items: center;
+                padding-bottom: 13px;
+                h2 {
+                    display: flex;
+                    align-items: center;
+                    color: #08594d;
+                    font-weight: 500;
+                    font-style: Medium;
+                    font-size: 32px;
+                    line-height: 100%;
+                    letter-spacing: 0px;
+                    vertical-align: middle;
+                }
+            }
+            p {
+                margin: 0px;
+                color: #08594d;
+                font-weight: 500;
+                font-style: Medium;
+                font-size: 16px;
+                line-height: 100%;
+                letter-spacing: 0px;
+                vertical-align: middle;
+            }
+        }
+    }
+
+    .docsupload_Section {
+        padding: 2rem 0;
+        .card {
+            border-color: #28a745;
+            padding: 22px;
+            .RFP_Section {
+                padding: 15px 0px;
+                .RFP_Heading {
+                    padding-bottom: 5px;
+                }
+                p {
+                    font-family: IBM Plex Sans;
+                    font-weight: 500;
+                    font-style: Medium;
+                    font-size: 15px;
+                    line-height: 100%;
+                    letter-spacing: 0px;
+                    vertical-align: middle;
+                    text-align: center;
+                }
+                .drop-area {
+                    border: 2px dashed #ccc;
+                    border-radius: 6px;
+                    padding: 30px;
+                    background-color: #f9f9f9;
+                    transition: all 0.3s ease;
+                    text-align: center;
+                    .upload-icon {
+                        text-align: center;
+                        padding-bottom: 15px;
+                        img {
+                            height: 21px;
+                            width: 18px;
+                        }
+                    }
+                    label {
+                        color: #000;
+                        text-decoration: none;
+                        padding: 10px 0px 0px 0px;
+                    }
+                    &.d-a-disabled {
+                        opacity: 0.6;      
+                        cursor: not-allowed;
+                    }
+
+                }
+
+                .drop-area:hover {
+                    border-color: #28a745;
+                    background-color: #f1fff5;
+
+                    &.d-a-disabled {
+                        background-color: #f9f9f9;
+                        border-color: #ccc;
+
+                        label {
+                            cursor: not-allowed;
+                        }
+                    }
+                }
+                
+            }
+            .RFP_Filename {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                background-color: #f9f9f9;
+                padding: 10px 15px;
+                border-radius: 5px;
+                margin-bottom: 10px;
+                .doc_name {
+                    display: flex;
+                    align-items: center;
+                    p {
+                        margin: 0px;
+                        font-size: 15px;
+                    }
+                }
+            }
+
+            .Proposal_Section {
+                padding: 15px 0px;
+                .Proposal_Heading {
+                    padding-bottom: 5px;
+                }
+                p {
+                    font-family: IBM Plex Sans;
+                    font-weight: 500;
+                    font-style: Medium;
+                    font-size: 15px;
+                    line-height: 100%;
+                    letter-spacing: 0px;
+                    vertical-align: middle;
+                    text-align: center;
+                }
+                .drop-area {
+                    border: 2px dashed #ccc;
+                    border-radius: 6px;
+                    padding: 30px;
+                    background-color: #f9f9f9;
+                    transition: all 0.3s ease;
+                    text-align: center;
+                    .upload-icon {
+                        text-align: center;
+                        padding-bottom: 15px;
+                        img {
+                            height: 21px;
+                            width: 18px;
+                        }
+                    }
+                    label {
+                        color: #000;
+                        text-decoration: none;
+                        padding: 10px 0px 0px 0px;
+                    }
+                    &.d-a-disabled {
+                        opacity: 0.6;  
+                        cursor: not-allowed;
+
+                        label {
+                            cursor: not-allowed;
+                        }
+                    }
+                }
+
+                .drop-area:hover {
+                    border-color: #28a745;
+                    background-color: #f1fff5;
+
+                    &.d-a-disabled {
+                        background-color: #f9f9f9;
+                        border-color: #ccc;
+                        opacity: 0.6;
+                    }
+                }
+            }
+            .Proposal_Filename {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                background-color: #f9f9f9;
+                padding: 10px 15px;
+                border-radius: 5px;
+                margin-bottom: 10px;
+                .doc_name {
+                    display: flex;
+                    align-items: center;
+                    p {
+                        margin: 0px;
+                        font-size: 15px;
+                    }
+                }
+            }
+
+            .document_Btns {
+                padding: 35px 0px 25px 0px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                gap: 30px;
+                .evalute_Btn {
+                    background-color: #1b8354;
+                    color: #fff;
+                    padding: 10px 20px;
+                    border-radius: 5px;
+                    border: 1px solid #1b8354;
+                    letter-spacing: 0.9px;
+                    font-size: 14px;
+                }
+                .clearAll_Btn {
+                    padding: 10px 20px;
+                    border-radius: 5px;
+                    border: 1px solid #1b8354;
+                    color: #1b8354;
+                    letter-spacing: 0.9px;
+                    font-size: 14px;
+                }
+            }
+        }
+    }
+
+    .evalaution_Results {
+        .results_Text {
+            padding-top: 25px;
+            p {
+                font-size: 15px;
+            }
+        }
+
+        .custom-tab-header {
+            position: relative;
+            display: inline-block;
+            width: 100%;
+
+            .tab-title {
+                font-weight: 600;
+                font-size: 16px;
+                cursor: pointer;
+
+                &.active {
+                    color: #000; // active text color
+                }
+            }
+
+            .tab-underline {
+                position: relative;
+                width: 100%;
+                height: 4px;
+                background-color: #ccc; // gray base line
+                margin-top: 5px;
+
+                .active-line {
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    height: 4px;
+                    width: 120px; // match length of "Evaluation results"
+                    background-color: #007a3d; // green active line
+                }
+            }
+        }
+
+        .card {
+            padding: 20px;
+            margin-top: 30px;
+            .table {
+                overflow-y: scroll;
+                th {
+                    background-color: #f9f9f9;
+                    font-weight: bold;
+                    font-size: 14px;
+                    border: none;
+                }
+                td {
+                    border: none;
+                    vertical-align: middle;
+                }
+
+                .total-score-row td {
+                    background-color: #1b8354;
+                    color: #fff;
+                }
+            }
+
+            .nodata_Text {
+                text-align: center;
+                padding: 10px 0px;
+            }
+        }
+    }
+}
+
+.table-responsive {
+    overflow-x: auto;
+    width: 100%;
+
+    .table {
+        min-width: 1200px; // Enables horizontal scroll when content overflows
+        border-collapse: separate;
+
+        th,
+        td {
+            min-width: 150px;
+        }
+
+        th {
+            font-weight: bold;
+            font-size: 14px;
+        }
+
+        td {
+            font-size: 12px;
+        }
+    }
+}
+
+.alert-msg-container {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    height: fit-content;
+    width: 300px;
+    padding: 1rem;
+    margin: 1rem;
+    text-align: start;
+    background: #51A351;
+    color: white;
+    border-radius: 3px;
+    z-index: 9999;
+    box-shadow: 0 0 12px #999999;
+
+    .msg-container {
+        display: flex;
+        gap: 1rem;
+        align-items: center;
+    }
+
+    .alert-msg {
+        .msg-content {
+            display: flex;
+        }   
+
+        p {
+            margin: 0;
+        }
+    }
+
+    .loading::after {
+        content: '';
+        animation: dots 1.5s steps(3, end) infinite;
+    }
+
+    .spinner {
+        border: 6px solid rgba(255, 255, 255, 0.1); /* Light outer ring */
+        border-top: 6px solid #00ffcc;              /* Highlighted top */
+        border-radius: 50%;
+        width: 30px;
+        height: 30px;
+        animation: spin 1s linear infinite;
+    }
+
+    @keyframes spin {
+        0% { transform: rotate(0deg); }
+        100% { transform: rotate(360deg); }
+    }
+
+    @keyframes dots {
+        0% { content: ''; }
+        33% { content: '.'; }
+        66% { content: '..'; }
+        100% { content: '...'; }
+    }
+}

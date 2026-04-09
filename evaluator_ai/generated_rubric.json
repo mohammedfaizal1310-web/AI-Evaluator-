@@ -1,0 +1,65 @@
+[
+    {
+        "main_criteria": ":----------------------------------------",
+        "main_weight": ":-------",
+        "sub_weight": ":---------------------------------------",
+        "sub_criteria": ":-----------",
+        "expectation": ":----------"
+    },
+    {
+        "main_criteria": "الخبرة المتخصصة للشركة المتقدّ مة (Specialized Experience of the Applicant Company)",
+        "main_weight": "6",
+        "sub_weight": "خبرة العمل على مشاريع مشابهه في المملكة العربية السعودية مع ذكر العمالء الرئيسيين (Experience working on similar projects in Saudi Arabia, mentioning key clients)",
+        "sub_criteria": "6",
+        "expectation": "- **Excellent (Full Marks):** Vendor provides a comprehensive list of 5+ highly relevant projects successfully completed in Saudi Arabia, with detailed descriptions, dates, and verifiable key client references (including contact details). Projects demonstrate direct relevance to the scope of this tender. <br> - **Good (Partial Marks):** Vendor lists 2-4 relevant projects in Saudi Arabia, with brief descriptions and client names. Projects show some relevance but may lack detailed outcomes or verifiable references. <br> - **Insufficient (Low/No Marks):** Vendor lists fewer than 2 projects, or projects are not in Saudi Arabia, or lack relevance, or no client details are provided."
+    },
+    {
+        "main_criteria": "مؤهالت فريق العمل القائم على المشروع (Qualifications of the Project Team)",
+        "main_weight": "25",
+        "sub_weight": "خبرة فريق العمل في العمل على مشاريع مشابهه مع ارفاق مؤهالت فريق العمل (Team's experience working on similar projects, attaching team qualifications)",
+        "sub_criteria": "5",
+        "expectation": "- **Excellent (Full Marks):** Vendor provides detailed individual CVs for all key team members, clearly demonstrating 5+ years of direct, relevant experience on similar projects, supported by academic qualifications and certifications. CVs are tailored to the project roles. <br> - **Good (Partial Marks):** Vendor provides CVs for most key team members, showing general relevant experience (3-5 years) and basic qualifications. CVs may not be fully tailored or lack specific project details. <br> - **Insufficient (Low/No Marks):** Vendor provides generic role descriptions without individual CVs, or CVs show limited relevant experience (less than 3 years), or qualifications are missing/irrelevant."
+    },
+    {
+        "main_criteria": "مؤهالت فريق العمل القائم على المشروع (Qualifications of the Project Team)",
+        "main_weight": "25",
+        "sub_weight": "خبرة فريق العمل بالتكنولوجيا المطلوبة للمشروع (Team's experience with the required project technology)",
+        "sub_criteria": "10",
+        "expectation": "- **Excellent (Full Marks):** Vendor demonstrates extensive and proven experience of all key team members with the specific technologies outlined in the project requirements, supported by certifications, project examples, and detailed technical skill matrices. <br> - **Good (Partial Marks):** Vendor shows general familiarity and some experience of key team members with the required technologies. Experience may be less in-depth or not fully documented with certifications. <br> - **Insufficient (Low/No Marks):** Vendor's team lacks demonstrable experience with the core technologies required, or only provides generic statements without specific evidence."
+    },
+    {
+        "main_criteria": "مؤهالت فريق العمل القائم على المشروع (Qualifications of the Project Team)",
+        "main_weight": "25",
+        "sub_weight": "خبرة مدير المشروع في العمل على مشاريع مشابهه (Project Manager's experience working on similar projects)",
+        "sub_criteria": "5",
+        "expectation": "- **Excellent (Full Marks):** Project Manager's CV clearly demonstrates 7+ years of experience managing projects of similar scope, complexity, and size, with a proven track record of successful delivery, supported by PMP/Prince2 certification and client testimonials. <br> - **Good (Partial Marks):** Project Manager's CV shows 4-6 years of experience managing relevant projects, with some evidence of successful delivery. May have a project management certification or be working towards one. <br> - **Insufficient (Low/No Marks):** Project Manager's CV shows less than 4 years of relevant project management experience, or lacks specific project examples, or no relevant certifications."
+    },
+    {
+        "main_criteria": "مؤهالت فريق العمل القائم على المشروع (Qualifications of the Project Team)",
+        "main_weight": "25",
+        "sub_weight": "نسبة السعوديين في فريق العمل 20% فأكثر (Percentage of Saudis in the team 20% or more)",
+        "sub_criteria": "5",
+        "expectation": "- **Excellent (Full Marks):** Vendor commits to and clearly demonstrates a team composition with 30% or more Saudi nationals in key roles, providing supporting documentation (e.g., national ID copies, employment contracts). <br> - **Good (Partial Marks):** Vendor commits to and demonstrates a team composition with 20-29% Saudi nationals, providing supporting documentation. <br> - **Insufficient (Low/No Marks):** Vendor's proposed team has less than 20% Saudi nationals, or fails to provide adequate documentation to verify the percentage."
+    },
+    {
+        "main_criteria": "الفهم والحلول المقدّ مة (Understanding and Proposed Solutions)",
+        "main_weight": "30",
+        "sub_weight": "أن يكون الحل المقدم يشمل المتطلبات الفنية الملحقة ملحق رقم 1 (The proposed solution must include the attached technical requirements, Appendix No. 1)",
+        "sub_criteria": "30",
+        "expectation": "- **Excellent (Full Marks):** Vendor's proposed solution comprehensively addresses all technical requirements detailed in Appendix 1, providing innovative and robust approaches, detailed architecture, and clear implementation methodology. All requirements are explicitly met or exceeded. <br> - **Good (Partial Marks):** Vendor's proposed solution addresses most technical requirements from Appendix 1, with a clear understanding of the scope. Some details might be generic or lack specific implementation plans for minor requirements. <br> - **Insufficient (Low/No Marks):** Vendor's proposed solution fails to address significant technical requirements from Appendix 1, or provides a generic solution that does not align with the specified needs."
+    },
+    {
+        "main_criteria": "الدعم والصيانة (Support and Maintenance)",
+        "main_weight": "25",
+        "sub_weight": "تقديم خطة تفصيلية للدعم والصيانة (Submission of a detailed support and maintenance plan)",
+        "sub_criteria": "25",
+        "expectation": "- **Excellent (Full Marks):** Vendor provides a highly detailed and comprehensive support and maintenance plan, including clear SLAs (Service Level Agreements) for different severity levels, 24/7 support options, escalation matrix, preventative maintenance schedules, and a dedicated support team structure. <br> - **Good (Partial Marks):** Vendor provides a support and maintenance plan with basic SLAs, defined support hours, and a general overview of maintenance activities. Lacks some specific details or advanced support features. <br> - **Insufficient (Low/No Marks):** Vendor provides a vague or incomplete support and maintenance plan, lacking specific SLAs, response times, or a clear methodology for issue resolution."
+    },
+    {
+        "main_criteria": "نقل المعرفة (Knowledge Transfer)",
+        "main_weight": "10",
+        "sub_weight": "تقديم خطة تفصيلية لنقل المعرفة المقدمة مع متطلبات المشروع وفريق عمل المركز (Submission of a detailed knowledge transfer plan provided with project requirements and the Center's team)",
+        "sub_criteria": "10",
+        "expectation": "- **Excellent (Full Marks):** Vendor submits a highly detailed and structured knowledge transfer plan, including specific training modules, workshops, documentation strategy, mentorship programs, and a timeline for transferring all necessary project knowledge to the Center's team, ensuring self-sufficiency. <br> - **Good (Partial Marks):** Vendor provides a knowledge transfer plan that outlines general training sessions and documentation. It may lack specific details on methodology, timelines, or how to ensure the Center's team achieves full operational independence. <br> - **Insufficient (Low/No Marks):** Vendor provides a superficial or generic knowledge transfer plan, or fails to demonstrate a clear strategy for empowering the Center's team with the necessary project knowledge."
+    }
+]

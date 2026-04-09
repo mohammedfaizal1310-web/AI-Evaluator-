@@ -1,0 +1,169 @@
+@if(disableFieldsOnEvaluate) {
+    <div class="alert-msg-container">
+        <div class="msg-container">
+
+            <div>
+                <div class="spinner"></div>
+            </div>
+
+            <div class="alert-msg">
+                <h6 class="msg-title">Evaluating</h6>
+                <div class="msg-content">
+                    <p>In-progress</p><p class="loading"></p>
+                </div>
+                
+            </div>
+        </div>
+
+        
+    </div>
+}
+
+<section class="main_Content">
+    <div class="container">
+        <div class="score_Section">
+            <div class="ai_Image">
+                <img src="../../assets/ai-brain.png">
+            </div>
+
+            <div class="score_Content">
+                <div class="score_Content_Heading">
+                    <h2>Analyze and generate score</h2>&nbsp;&nbsp;&nbsp;&nbsp;
+                    <span><img src="../../assets/info.png"></span>
+                </div>
+                <p>This AI enabled the system will analyze the documents and give a success rate of your proposal</p>
+            </div>
+        </div>
+
+        <!-- Upload Documents -->
+        <div class="docsupload_Section">
+            <div class="card">
+                <div class="row">
+
+                    <!-- RFP Section -->
+                    <div class="col-md-6">
+                        <div class="RFP_Section">
+                            <p class="RFP_Heading">RFP Document</p>
+                            <div [class]="!disableFieldsOnEvaluate ? 'drop-area' : 'drop-area d-a-disabled'">
+                                <div class="upload-icon">
+                                    <img src="../../assets/upload.png">
+                                </div>
+                                <p class="fw-bold">Click here to upload</p>
+                                <small class="text-muted">
+                                    Maximum file size allowed is 2MB, supported file formats include .txt
+                                </small>
+                                <br>
+                                <label class="btn btn-link mt-2">
+                                    Browse Files
+                                    <input type="file" (change)="onFileSelect($event, 'rfp')" hidden [disabled]="disableFieldsOnEvaluate">
+                                </label>
+                            </div>
+                        </div>
+
+                        <!-- Show RFP File -->
+                        <div *ngFor="let file of rfpFiles; trackBy: trackByName" class="RFP_Filename">
+                            <div class="doc_name">
+                                <img src="../../assets/feedback.png">&nbsp;&nbsp;&nbsp;
+                                <p>{{ file.name }}</p>
+                            </div>
+                            <div (click)="removeFile(file, 'rfp')" style="cursor:pointer;">
+                                <img src="../../assets/close.png">
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Proposal Section -->
+                    <div class="col-md-6">
+                        <div class="Proposal_Section">
+                            <p class="Proposal_Heading">Proposal Documents</p>
+                            <div [class]="!disableFieldsOnEvaluate ? 'drop-area' : 'drop-area d-a-disabled'">
+                                <div class="upload-icon">
+                                    <img src="../../assets/upload.png">
+                                </div>
+                                <p class="fw-bold">Click here to upload</p>
+                                <small class="text-muted">
+                                    Maximum file size allowed is 2MB, supported file formats include .txt
+                                </small>
+                                <br>
+                                <label class="btn btn-link mt-2">
+                                    Browse Files
+                                    <input type="file" (change)="onFileSelect($event, 'proposals')" multiple hidden [disabled]="disableFieldsOnEvaluate">
+                                </label>
+                            </div>
+                        </div>
+
+                        <!-- Show Proposal Files -->
+                        <div *ngFor="let file of proposalFiles; trackBy: trackByName" class="Proposal_Filename">
+                            <div class="doc_name">
+                                <img src="../../assets/feedback.png">&nbsp;&nbsp;&nbsp;
+                                <p>{{ file.name }}</p>
+                            </div>
+                            <div (click)="removeFile(file, 'proposals')" style="cursor:pointer;">
+                                <img src="../../assets/close.png">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Buttons -->
+                <div class="row">
+                    <div class="document_Btns">
+                        <button class="btn evalute_Btn" (click)="evaluate()" [disabled]="!canEvaluate || disableFieldsOnEvaluate">
+                            Evaluate
+                        </button>
+                        <button class="btn clearAll_Btn" (click)="clearDocs()" [disabled]="disableFieldsOnEvaluate">
+                            Clear All
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Scores section -->
+        <div class="evalaution_Results">
+            <div class="results_Text">
+                <p>You can view the evaluation score in the below.</p>
+            </div>
+
+            <div class="container mt-4 p-0">
+                <div class="custom-tab-header">
+                    <span class="tab-title active">Evaluation results</span>
+                    <div class="tab-underline">
+                        <div class="active-line"></div>
+                    </div>
+                </div>
+
+                <!-- Table -->
+                <div class="card mt-4">
+                    <div class="table-wrapper">
+                        <div class="table-responsive mt-3" *ngIf="evaluationResults.length > 0">
+                            <table class="table table-bordered text-center align-middle">
+                                <thead style="position: sticky; top: 0;">
+                                    <tr>
+                                        <th *ngFor="let header of tableHeaders">{{ header }}</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr *ngFor="let result of evaluationResults">
+                                        <td *ngFor="let header of tableHeaders">
+                                            {{ result[header] === 'N/A' ? '' : result[header] }}
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <div class="text-center text-muted" *ngIf="evaluationResults.length === 0">
+                            No data found
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Loader -->
+
+<ngx-spinner bdColor="rgba(255,255,255,0.1)" size="medium" color="#4caf50" type="ball-spin-clockwise"
+    [fullScreen]="true">
+</ngx-spinner>

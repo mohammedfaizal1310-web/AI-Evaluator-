@@ -1,0 +1,30 @@
+.header_Section {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 25px;
+    height: 75px;
+    .header_Buttons {
+        display: flex;
+        align-items: center;
+        p {
+            padding-right: 25px;
+            margin: 0px;
+        }
+
+        button {
+            background: #1b8354;
+            border: none;
+            padding: 8px 10px;
+            border-radius: 5px;
+            select {
+                background: #1b8354;
+                color: #fff;
+            }
+        }
+    }
+}
+
+.header_Buttons p:last-child {
+    padding-right: 0px !important;
+}
